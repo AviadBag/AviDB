@@ -1,0 +1,53 @@
+My DataBase! Can save data!
+
+{
+    userNames: [
+        user1: {
+            name: 'aviad',
+            pass: '1234'
+        },
+        user2: {
+            name: 'matanya',
+            pass: '123456'
+        }
+    ],
+    posts: [
+        post1: {
+            title: 'This is a title!',
+            msg: 'This is the body!'
+        },
+        post2: {
+            title: 'This is a title! 2!',
+            msg: 'This is the body! 2!'
+        }
+    ]
+}
+
+FILE:
+[
+userNames[user1{name'aviad'&pass'123456'}&user2{name'matanya'&pass'123456'}]&
+posts[post1{title'This is a title!'&msg'This is the body!'}&post2{title'This is a title! 2!'&msg'This is the body! 2!'}]
+]
+
+||
+
+userNames[
+    user1{
+        name'aviad'&
+        pass'123456'
+    }&
+    user2{
+        name'matanya'&
+        pass'123456'
+    }
+]&
+posts[
+    post1{
+        title'This is a title!'&
+        msg'This is the body!'
+    }&
+    post2{
+        title'This is a title! 2!'&
+        msg'This is the body! 2!'
+    }
+]
