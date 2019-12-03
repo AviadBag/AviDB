@@ -8,5 +8,5 @@ using namespace std;
 class Data
 {
     public:
-        virtual string ToString() { return ""; }
+		virtual string ToString() { return "DEFAULT DATA"; }
 };
