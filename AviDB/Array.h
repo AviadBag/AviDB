@@ -1,10 +1,11 @@
 #pragma once
 
 #include "Data.h"
+#include "Text.h"
 
 struct Item
 {
-    Data data;
+    Data* data;
     Item* next;
 };
 
@@ -15,12 +16,13 @@ class Array : public Data
         ~Array();
 
         // Getters
+		Data* Get(int);
+
         int GetCount();
-        Data Get(int);
         string ToString();
 
         // Action methods
-        void Add(Data);
+        void Add(Data*); // The data should be dynamic allocated
 
         const static int INVALID_INDEX_EXCEPTION = -1;
 
@@ -28,8 +30,6 @@ class Array : public Data
         //Member vars
         int count;
         Item* header;
-
-        char* stringData;
 
         // Getters
         Item* GetItem(int);

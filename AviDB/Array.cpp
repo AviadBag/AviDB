@@ -13,9 +13,9 @@ Array::~Array()
 
 string Array::ToString()
 {
-    string str = "[" + Get(0).ToString() + "&";
-    for (int i = 0; i < GetCount() - 2; i++) str.append(Get(i).ToString() + "&");
-    str.append(Get(GetCount() - 1).ToString() + "]");
+    string str = "[\'" + Get(0)->ToString() + "\'&";
+    for (int i = 0; i < GetCount() - 2; i++) str.append("\'" +  Get(i)->ToString() + "\'&" );
+    str.append( '\'' + Get(GetCount() - 1)->ToString() + "\']" );
 
     return str;
 }
@@ -31,14 +31,14 @@ void Array::FreeList(Item* item)
 
 int Array::GetCount() { return this->count; }
 
-Data Array::Get(int index)
+Data* Array::Get(int index)
 {
     if (index < 0 || index > GetCount() - 1) throw Array::INVALID_INDEX_EXCEPTION;
 
     return GetItem(index)->data;
 }
 
-void Array::Add(Data data)
+void Array::Add(Data* data)
 {
     Item* item = new Item;
     item->data = data;
