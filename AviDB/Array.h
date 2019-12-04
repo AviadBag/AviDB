@@ -5,6 +5,8 @@
 
 struct Item
 {
+	Item() : next(nullptr) {}
+
     Data* data;
     Item* next;
 };
@@ -26,14 +28,18 @@ class Array : public Data
 
         const static int INVALID_INDEX_EXCEPTION = -1;
 
+	protected:
+		// Action methods
+		void AddItem(Item*);
+
+		// Getters
+		Item* GetItem(int);
+		Item* GetLastItem();
+
     private:
         //Member vars
         int count;
         Item* header;
-
-        // Getters
-        Item* GetItem(int);
-        Item* GetLastItem();
 
         void FreeList(Item*);
 };

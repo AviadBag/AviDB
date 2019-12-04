@@ -1,26 +1,19 @@
 #include <iostream>
 #include "Array.h"
 #include "Text.h"
+#include "Dict.h"
 
 using namespace std;
 
 int main()
 {
-	Text* t1 = new Text("Aviad Bagno");
-	Text* t2 = new Text("Matanya Bagno");
+	Text* t1 = new Text("Aviad");
+	Text* t2 = new Text("Matanya");
 
-	Array* nestedArr = new Array();
-	Text* t3 = new Text("Nurit Bagno");
-	Text* t4 = new Text("Nitay Bagno");
-	nestedArr->Add(t3);
-	nestedArr->Add(t4);
+	Dict* dict = new Dict();
+	dict->Add("k1", t1);
+	dict->Add("k2", t1);
+	cout << dict->GetByKey("k1")->ToString();
 
-	Array arr;
-	arr.Add(t1);
-	arr.Add(t2);
-	arr.Add(nestedArr);
-
-	
-
-	delete t1, t2, t3, t4, nestedArr;
+	delete t1, t2, dict;
 }

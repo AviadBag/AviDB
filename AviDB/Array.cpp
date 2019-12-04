@@ -8,7 +8,17 @@ Array::Array()
 
 Array::~Array()
 {
+	cout << "REMOVING";
     FreeList(header); // Free all the list.
+}
+
+void Array::FreeList(Item* item)
+{
+	if (item->next != nullptr)
+	{
+		FreeList(item->next);
+	}
+	delete item;
 }
 
 string Array::ToString()
@@ -18,15 +28,6 @@ string Array::ToString()
     str.append( '\'' + Get(GetCount() - 1)->ToString() + "\']" );
 
     return str;
-}
-
-void Array::FreeList(Item* item)
-{
-    if (item->next != nullptr)
-    {
-        FreeList(item->next);
-    }
-    delete item;
 }
 
 int Array::GetCount() { return this->count; }
@@ -42,19 +43,23 @@ void Array::Add(Data* data)
 {
     Item* item = new Item;
     item->data = data;
-    item->next = nullptr;
 
-    if (header == nullptr)
-    {
-        header = item;
-    }
-    else
-    {
-        Item* last = GetLastItem();
-        last->next = item;
-    }
+	AddItem(item);
+}
 
-    count++;
+void Array::AddItem(Item* item)
+{
+	if (header == nullptr)
+	{
+		header = item;
+	}
+	else
+	{
+		Item* last = GetLastItem();
+		last->next = item;
+	}
+
+	count++;
 }
 
 Item* Array::GetItem(int index)
