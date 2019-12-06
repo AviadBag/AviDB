@@ -2,24 +2,27 @@
 
 void Dict::Add(string key, Data* data)
 {
-	Item* item = new Item;
-	item->key = key;
-	item->data = data;
+	DictItem* item = new DictItem(key, data);
 
 	AddItem(item);
 }
 
 Data* Dict::GetByKey(string key)
 {
-	return GetItemByKey(key)->data;
+	return GetItemByKey(key)->GetData();
 }
 
-Item* Dict::GetItemByKey(string key)
+DictItem* Dict::GetItem(int index)
+{
+	return static_cast<DictItem*>( Array::GetItem(index) );
+}
+
+DictItem* Dict::GetItemByKey(string key)
 {
 	for (int i = 0; i < GetCount(); i++)
 	{
-		Item* item = GetItem(i);
-		if (item->key == key) return item;
+		DictItem* item = GetItem(i);
+		if (item->GetKey() == key) return item;
 	}
 	
 	throw INVALID_KEY_EXCEPTION;

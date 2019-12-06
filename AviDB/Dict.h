@@ -1,16 +1,7 @@
 #pragma once
 
 #include "Array.h"
-
-struct Item
-{
-	Item() : next(nullptr) {}
-
-	string key;
-	Data* data;
-
-	Data* next;
-};
+#include "DictItem.h"
 
 class Dict : public Array
 {
@@ -21,5 +12,6 @@ class Dict : public Array
 		const static int INVALID_KEY_EXCEPTION = -2;
 
 	private:
-		Item* GetItemByKey(string);
+		DictItem* GetItem(int);
+		DictItem* GetItemByKey(string);
 };

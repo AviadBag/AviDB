@@ -14,9 +14,9 @@ Array::~Array()
 
 void Array::FreeList(Item* item)
 {
-	if (item->next != nullptr)
+	if (item->GetNext() != nullptr)
 	{
-		FreeList(item->next);
+		FreeList(item->GetNext());
 	}
 	delete item;
 }
@@ -36,13 +36,13 @@ Data* Array::Get(int index)
 {
     if (index < 0 || index > GetCount() - 1) throw Array::INVALID_INDEX_EXCEPTION;
 
-    return GetItem(index)->data;
+    return GetItem(index)->GetData();
 }
 
 void Array::Add(Data* data)
 {
     Item* item = new Item;
-    item->data = data;
+    item->SetData(data);
 
 	AddItem(item);
 }
@@ -56,7 +56,7 @@ void Array::AddItem(Item* item)
 	else
 	{
 		Item* last = GetLastItem();
-		last->next = item;
+		last->SetNext(item);
 	}
 
 	count++;
@@ -65,7 +65,7 @@ void Array::AddItem(Item* item)
 Item* Array::GetItem(int index)
 {
     Item* current = header;
-    for (int i = 0; i < index; i++) current = current->next;
+    for (int i = 0; i < index; i++) current = current->GetNext();
 
     return current;
 }

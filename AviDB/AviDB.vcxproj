@@ -22,12 +22,16 @@
     <ClInclude Include="Array.h" />
     <ClInclude Include="Data.h" />
     <ClInclude Include="Dict.h" />
+    <ClInclude Include="DictItem.h" />
+    <ClInclude Include="Item.h" />
     <ClInclude Include="Text.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Array.cpp" />
     <ClCompile Include="Data.cpp" />
     <ClCompile Include="Dict.cpp" />
+    <ClCompile Include="DictItem.cpp" />
+    <ClCompile Include="Item.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Text.cpp" />
   </ItemGroup>

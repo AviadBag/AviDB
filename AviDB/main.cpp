@@ -2,18 +2,18 @@
 #include "Array.h"
 #include "Text.h"
 #include "Dict.h"
+#include "DictItem.h"
 
 using namespace std;
 
 int main()
 {
-	Text* t1 = new Text("Aviad");
-	Text* t2 = new Text("Matanya");
+	Text* t1 = new Text("Aviad Bagno");
+	Text* t2 = new Text("Matanya Bagno");
 
-	Dict* dict = new Dict();
-	dict->Add("k1", t1);
-	dict->Add("k2", t1);
-	cout << dict->GetByKey("k1")->ToString();
+	Dict d;
+	d.Add("aviad", t1);
+	d.Add("matanya", t2);
 
-	delete t1, t2, dict;
+	delete t1, t2;
 }

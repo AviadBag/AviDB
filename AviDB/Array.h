@@ -1,15 +1,8 @@
 #pragma once
 
+#include "Item.h"
 #include "Data.h"
 #include "Text.h"
-
-struct Item
-{
-	Item() : next(nullptr) {}
-
-    Data* data;
-    Item* next;
-};
 
 class Array : public Data
 {
