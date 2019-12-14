@@ -8,7 +8,6 @@ Array::Array()
 
 Array::~Array()
 {
-	cout << "REMOVING";
     FreeList(header); // Free all the list.
 }
 
@@ -23,14 +22,29 @@ void Array::FreeList(Item* item)
 
 string Array::ToString()
 {
-    string str = "[\'" + Get(0)->ToString() + "\'&";
-    for (int i = 0; i < GetCount() - 2; i++) str.append("\'" +  Get(i)->ToString() + "\'&" );
-    str.append( '\'' + Get(GetCount() - 1)->ToString() + "\']" );
+	string str = "";
+	str.append( string(1, GetStartingSign()) );
+	for (int i = 0; i < GetCount(); i++)
+	{
+		Item* item = GetItem(i);
+		str.append(item->GetData()->ToString());
 
-    return str;
+		if (i < GetCount() - 1) str.append( string(1, GetSeperator() ));
+	}
+
+	str.append( string(1, GetEndingSign()) );
+
+	return str;
 }
 
 int Array::GetCount() { return this->count; }
+
+string Array::GetType() { return "Array"; }
+
+char Array::GetSeperator() { return ','; }
+
+char Array::GetStartingSign() { return '['; }
+char Array::GetEndingSign() { return ']'; }
 
 Data* Array::Get(int index)
 {
@@ -41,8 +55,7 @@ Data* Array::Get(int index)
 
 void Array::Add(Data* data)
 {
-    Item* item = new Item;
-    item->SetData(data);
+    Item* item = new Item(data);
 
 	AddItem(item);
 }

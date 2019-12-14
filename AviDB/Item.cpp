@@ -1,11 +1,5 @@
 #include "Item.h"
 
-Item::Item() 
-{
-	data = nullptr;
-	next = nullptr;
-}
-
 Item::Item(Data* d)
 {
 	data = d;

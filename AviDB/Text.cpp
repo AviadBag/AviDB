@@ -4,7 +4,15 @@ Text::Text() : Text("") {}
 
 Text::Text(const char* firstText) : text(firstText) {}
 
-string Text::ToString() { return text; }
+Text::Text(string firstText) : text(firstText) {}
+
+string Text::GetString() { return text; }
+string Text::GetType() { return "Text"; }
+
+string Text::ToString() { return GetStartingSign() + GetString() + GetEndingSign(); }
+
+char Text::GetStartingSign() { return '\''; }
+char Text::GetEndingSign() { return '\''; }
 
 // Operators overloading
 // Assignments operator

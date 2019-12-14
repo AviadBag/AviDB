@@ -12,8 +12,13 @@ class Array : public Data
 
         // Getters
 		Data* Get(int);
-
         int GetCount();
+
+        static string GetType(); // Returns "Array"
+        static char GetSeperator(); // Returns ','
+        static char GetStartingSign(); // Returns '['
+        static char GetEndingSign(); // Returns ']'
+
         string ToString();
 
         // Action methods

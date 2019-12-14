@@ -5,7 +5,6 @@
 class Item
 {
 	public:
-		Item();
 		Item(Data*);
 
 		// Getters
