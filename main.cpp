@@ -1,10 +1,10 @@
 #include <iostream>
 
-#include "Array.h"
-#include "Text.h"
-#include "Convert.h"
-#include "Parser.h"
-#include "IO.h"
+#include "AviDB/Array.h"
+#include "AviDB/Text.h"
+#include "AviDB/Convert.h"
+#include "AviDB/Parser.h"
+#include "AviDB/IO.h"
 
 using namespace std;
 
