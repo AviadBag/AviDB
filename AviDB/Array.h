@@ -14,12 +14,12 @@ class Array : public Data
 		Data* Get(int);
         int GetCount();
 
-        static string GetType(); // Returns "Array"
+        string GetType() override; // Returns "Array"
         static char GetSeperator(); // Returns ','
         static char GetStartingSign(); // Returns '['
         static char GetEndingSign(); // Returns ']'
 
-        string ToString();
+        string ToString() override;
 
         // Action methods
         void Add(Data*); // The data should be dynamic allocated

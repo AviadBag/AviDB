@@ -11,14 +11,14 @@ class Text : public Data
 {
     public:
         Text();
-		Text(const char*);
-        Text(string);
+		explicit Text(const char*);
+        explicit Text(string);
         
-        // Getter
+        // Getters
         string GetString(); // Returns str
-        virtual string ToString(); // Returns "str"
+        string ToString() override; // Returns "str"
         
-        string GetType(); // Returns "Text"
+        string GetType() override; // Returns "Text"
         static char GetStartingSign(); // Returns '\''
         static char GetEndingSign(); // Returns ALSO '\''
 

@@ -9,7 +9,7 @@ class Data
 {
     public:
 		virtual string ToString() = 0;
-		static string GetType() { return string(); };
+		virtual string GetType() = 0;
 		static char GetStartingSign() { return '0'; };
 		static char GetEndingSign() { return '0'; };
 };

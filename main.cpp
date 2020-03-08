@@ -41,6 +41,12 @@ int main()
 	Array* parsedArr = Parser::Parse(mainArr.ToString());
 	cout << parsedArr->ToString();
 
-	delete innerArr, t1, t2, innerDict, innerInnerDict, d, parsedArr;
+	delete innerArr;
+	delete t1;
+	delete t2;
+	delete innerDict;
+	delete innerInnerDict;
+	delete d;
+	delete parsedArr;
 	
 }

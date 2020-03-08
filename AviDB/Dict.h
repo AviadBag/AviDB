@@ -14,7 +14,7 @@ class Dict : public Array
 		//Getters
 		Data* GetByKey(string);
 
-		static string GetType(); // Returns "Dict"
+		string GetType() override; // Returns "Dict"
 		static char GetSeperator(); // Returns '&'
 		static char GetStartingSign(); // Returns '{'
 		static char GetEndingSign(); // Returns '}'
