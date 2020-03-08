@@ -15,15 +15,15 @@ class Dict : public Array
 		Data* GetByKey(string);
 
 		string GetType() override; // Returns "Dict"
-		static char GetSeperator(); // Returns '&'
+		static char GetSeparator(); // Returns '&'
 		static char GetStartingSign(); // Returns '{'
 		static char GetEndingSign(); // Returns '}'
 		static char GetEqualsSign(); // Returns '='
 
-		string ToString();
+		string ToString() override;
 
 	private:
-		DictItem* GetItem(int);
 		DictItem* GetItemByKey(string);
-		DictItem* GetLastItem();
+        DictItem* GetItem(int) override;
+        DictItem* GetLastItem() override;
 };

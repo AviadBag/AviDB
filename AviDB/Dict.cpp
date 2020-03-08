@@ -17,7 +17,7 @@ string Dict::GetType()
 	return "Dict";
 }
 
-char Dict::GetSeperator() { return '&'; }
+char Dict::GetSeparator() { return '&'; }
 
 char Dict::GetStartingSign() { return '{'; }
 char Dict::GetEndingSign() { return '}'; }
@@ -34,7 +34,7 @@ string Dict::ToString()
 		str.append( string(1, GetEqualsSign()) );
 		str.append(item->GetData()->ToString());
 
-		if (i < GetCount() - 1) str.append( string(1, GetSeperator()) );
+		if (i < GetCount() - 1) str.append( string(1, GetSeparator()) );
 	}
 
 	str.append( string(1, GetEndingSign()) );

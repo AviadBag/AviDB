@@ -13,7 +13,7 @@ Array* Parser::ParseArray(string data)
 	Array* arr = new Array;
 	string sub_data = RemoveStartEnd(data);
 
-	vector<string> elements = DataSplitter(sub_data, Array::GetSeperator());
+	vector<string> elements = DataSplitter(sub_data, Array::GetSeparator());
 
 	for (int i = 0; i < elements.size(); i++)
 	{
@@ -31,7 +31,7 @@ Dict* Parser::ParseDict(string data)
 	Dict* dict = new Dict;
 	string sub_data = RemoveStartEnd(data);
 
-	vector<string> elements = DataSplitter(sub_data, Dict::GetSeperator());
+	vector<string> elements = DataSplitter(sub_data, Dict::GetSeparator());
 
 	for (int i = 0; i < elements.size(); i++)
 	{

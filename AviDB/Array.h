@@ -15,7 +15,7 @@ class Array : public Data
         int GetCount();
 
         string GetType() override; // Returns "Array"
-        static char GetSeperator(); // Returns ','
+        static char GetSeparator(); // Returns ','
         static char GetStartingSign(); // Returns '['
         static char GetEndingSign(); // Returns ']'
 
@@ -31,8 +31,8 @@ class Array : public Data
 		void AddItem(Item*);
 
 		// Getters
-		Item* GetItem(int);
-		Item* GetLastItem();
+        virtual Item* GetItem(int);
+		virtual Item* GetLastItem();
 
     private:
         //Member vars

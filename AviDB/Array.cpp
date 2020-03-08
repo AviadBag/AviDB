@@ -29,7 +29,7 @@ string Array::ToString()
 		Item* item = GetItem(i);
 		str.append(item->GetData()->ToString());
 
-		if (i < GetCount() - 1) str.append( string(1, GetSeperator() ));
+		if (i < GetCount() - 1) str.append( string(1, GetSeparator() ));
 	}
 
 	str.append( string(1, GetEndingSign()) );
@@ -41,7 +41,7 @@ int Array::GetCount() { return this->count; }
 
 string Array::GetType() { return "Array"; }
 
-char Array::GetSeperator() { return ','; }
+char Array::GetSeparator() { return ','; }
 
 char Array::GetStartingSign() { return '['; }
 char Array::GetEndingSign() { return ']'; }
