@@ -6,10 +6,6 @@
 
 #IncludeRegexTransform: 
 
-C:/Programming/Projects/C++/AviDB/AviDB/Array.cpp
-Array.h
-C:/Programming/Projects/C++/AviDB/AviDB/Array.h
-
 C:/Programming/Projects/C++/AviDB/AviDB/Array.h
 Item.h
 C:/Programming/Projects/C++/AviDB/AviDB/Item.h
@@ -18,29 +14,11 @@ C:/Programming/Projects/C++/AviDB/AviDB/Data.h
 Text.h
 C:/Programming/Projects/C++/AviDB/AviDB/Text.h
 
-C:/Programming/Projects/C++/AviDB/AviDB/Convert.cpp
-Convert.h
-C:/Programming/Projects/C++/AviDB/AviDB/Convert.h
-
-C:/Programming/Projects/C++/AviDB/AviDB/Convert.h
-Data.h
-C:/Programming/Projects/C++/AviDB/AviDB/Data.h
-Array.h
-C:/Programming/Projects/C++/AviDB/AviDB/Array.h
-Dict.h
-C:/Programming/Projects/C++/AviDB/AviDB/Dict.h
-Text.h
-C:/Programming/Projects/C++/AviDB/AviDB/Text.h
-
 C:/Programming/Projects/C++/AviDB/AviDB/Data.h
 iostream
 -
 string
 -
-
-C:/Programming/Projects/C++/AviDB/AviDB/DataBase.cpp
-DataBase.h
-C:/Programming/Projects/C++/AviDB/AviDB/DataBase.h
 
 C:/Programming/Projects/C++/AviDB/AviDB/DataBase.h
 iostream
@@ -54,20 +32,12 @@ C:/Programming/Projects/C++/AviDB/AviDB/Text.h
 Dict.h
 C:/Programming/Projects/C++/AviDB/AviDB/Dict.h
 
-C:/Programming/Projects/C++/AviDB/AviDB/Dict.cpp
-Dict.h
-C:/Programming/Projects/C++/AviDB/AviDB/Dict.h
-
 C:/Programming/Projects/C++/AviDB/AviDB/Dict.h
 Array.h
 C:/Programming/Projects/C++/AviDB/AviDB/Array.h
 DictItem.h
 C:/Programming/Projects/C++/AviDB/AviDB/DictItem.h
 
-C:/Programming/Projects/C++/AviDB/AviDB/DictItem.cpp
-DictItem.h
-C:/Programming/Projects/C++/AviDB/AviDB/DictItem.h
-
 C:/Programming/Projects/C++/AviDB/AviDB/DictItem.h
 iostream
 -
@@ -76,51 +46,25 @@ string
 Item.h
 C:/Programming/Projects/C++/AviDB/AviDB/Item.h
 
-C:/Programming/Projects/C++/AviDB/AviDB/IO.cpp
-IO.h
-C:/Programming/Projects/C++/AviDB/AviDB/IO.h
+C:/Programming/Projects/C++/AviDB/AviDB/Interpreter.cpp
+Interpreter.h
+C:/Programming/Projects/C++/AviDB/AviDB/Interpreter.h
 
-C:/Programming/Projects/C++/AviDB/AviDB/IO.h
-fstream
--
-iostream
--
+C:/Programming/Projects/C++/AviDB/AviDB/Interpreter.h
 string
 -
-
-C:/Programming/Projects/C++/AviDB/AviDB/Item.cpp
-Item.h
-C:/Programming/Projects/C++/AviDB/AviDB/Item.h
-
-C:/Programming/Projects/C++/AviDB/AviDB/Item.h
-Data.h
-C:/Programming/Projects/C++/AviDB/AviDB/Data.h
-
-C:/Programming/Projects/C++/AviDB/AviDB/Parser.cpp
-Parser.h
-C:/Programming/Projects/C++/AviDB/AviDB/Parser.h
-
-C:/Programming/Projects/C++/AviDB/AviDB/Parser.h
-iostream
--
-string
--
-sstream
+ostream
 -
 vector
 -
 Array.h
 C:/Programming/Projects/C++/AviDB/AviDB/Array.h
-Text.h
-C:/Programming/Projects/C++/AviDB/AviDB/Text.h
-Dict.h
-C:/Programming/Projects/C++/AviDB/AviDB/Dict.h
-Convert.h
-C:/Programming/Projects/C++/AviDB/AviDB/Convert.h
+DataBase.h
+C:/Programming/Projects/C++/AviDB/AviDB/DataBase.h
 
-C:/Programming/Projects/C++/AviDB/AviDB/Text.cpp
-Text.h
-C:/Programming/Projects/C++/AviDB/AviDB/Text.h
+C:/Programming/Projects/C++/AviDB/AviDB/Item.h
+Data.h
+C:/Programming/Projects/C++/AviDB/AviDB/Data.h
 
 C:/Programming/Projects/C++/AviDB/AviDB/Text.h
 iostream
@@ -129,18 +73,4 @@ string
 -
 Data.h
 C:/Programming/Projects/C++/AviDB/AviDB/Data.h
-
-C:/Programming/Projects/C++/AviDB/main.cpp
-iostream
--
-AviDB/Array.h
-C:/Programming/Projects/C++/AviDB/AviDB/Array.h
-AviDB/Text.h
-C:/Programming/Projects/C++/AviDB/AviDB/Text.h
-AviDB/Convert.h
-C:/Programming/Projects/C++/AviDB/AviDB/Convert.h
-AviDB/Parser.h
-C:/Programming/Projects/C++/AviDB/AviDB/Parser.h
-AviDB/IO.h
-C:/Programming/Projects/C++/AviDB/AviDB/IO.h
 

@@ -25,4 +25,4 @@ add_executable(AviDB
         AviDB/Parser.cpp
         AviDB/Parser.h
         AviDB/Text.cpp
-        AviDB/Text.h)
+        AviDB/Text.h AviDB/Interpreter.cpp AviDB/Interpreter.h)

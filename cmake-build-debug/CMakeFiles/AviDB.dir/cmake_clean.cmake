@@ -9,6 +9,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/AviDB.dir/AviDB/Dict.obj"
   "CMakeFiles/AviDB.dir/AviDB/DictItem.obj"
   "CMakeFiles/AviDB.dir/AviDB/IO.obj"
+  "CMakeFiles/AviDB.dir/AviDB/Interpreter.obj"
   "CMakeFiles/AviDB.dir/AviDB/Item.obj"
   "CMakeFiles/AviDB.dir/AviDB/Parser.obj"
   "CMakeFiles/AviDB.dir/AviDB/Text.obj"

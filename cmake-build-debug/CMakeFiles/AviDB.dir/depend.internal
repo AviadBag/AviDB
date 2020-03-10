@@ -41,6 +41,16 @@ CMakeFiles/AviDB.dir/AviDB/DictItem.obj
 CMakeFiles/AviDB.dir/AviDB/IO.obj
  C:/Programming/Projects/C++/AviDB/AviDB/IO.cpp
  C:/Programming/Projects/C++/AviDB/AviDB/IO.h
+CMakeFiles/AviDB.dir/AviDB/Interpreter.obj
+ C:/Programming/Projects/C++/AviDB/AviDB/Array.h
+ C:/Programming/Projects/C++/AviDB/AviDB/Data.h
+ C:/Programming/Projects/C++/AviDB/AviDB/DataBase.h
+ C:/Programming/Projects/C++/AviDB/AviDB/Dict.h
+ C:/Programming/Projects/C++/AviDB/AviDB/DictItem.h
+ C:/Programming/Projects/C++/AviDB/AviDB/Interpreter.cpp
+ C:/Programming/Projects/C++/AviDB/AviDB/Interpreter.h
+ C:/Programming/Projects/C++/AviDB/AviDB/Item.h
+ C:/Programming/Projects/C++/AviDB/AviDB/Text.h
 CMakeFiles/AviDB.dir/AviDB/Item.obj
  C:/Programming/Projects/C++/AviDB/AviDB/Data.h
  C:/Programming/Projects/C++/AviDB/AviDB/Item.cpp
@@ -61,12 +71,11 @@ CMakeFiles/AviDB.dir/AviDB/Text.obj
  C:/Programming/Projects/C++/AviDB/AviDB/Text.h
 CMakeFiles/AviDB.dir/main.obj
  C:/Programming/Projects/C++/AviDB/AviDB/Array.h
- C:/Programming/Projects/C++/AviDB/AviDB/Convert.h
  C:/Programming/Projects/C++/AviDB/AviDB/Data.h
+ C:/Programming/Projects/C++/AviDB/AviDB/DataBase.h
  C:/Programming/Projects/C++/AviDB/AviDB/Dict.h
  C:/Programming/Projects/C++/AviDB/AviDB/DictItem.h
- C:/Programming/Projects/C++/AviDB/AviDB/IO.h
+ C:/Programming/Projects/C++/AviDB/AviDB/Interpreter.h
  C:/Programming/Projects/C++/AviDB/AviDB/Item.h
- C:/Programming/Projects/C++/AviDB/AviDB/Parser.h
  C:/Programming/Projects/C++/AviDB/AviDB/Text.h
  C:/Programming/Projects/C++/AviDB/main.cpp

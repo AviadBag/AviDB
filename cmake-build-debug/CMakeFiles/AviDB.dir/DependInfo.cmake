@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Programming/Projects/C++/AviDB/AviDB/Dict.cpp" "C:/Programming/Projects/C++/AviDB/cmake-build-debug/CMakeFiles/AviDB.dir/AviDB/Dict.obj"
   "C:/Programming/Projects/C++/AviDB/AviDB/DictItem.cpp" "C:/Programming/Projects/C++/AviDB/cmake-build-debug/CMakeFiles/AviDB.dir/AviDB/DictItem.obj"
   "C:/Programming/Projects/C++/AviDB/AviDB/IO.cpp" "C:/Programming/Projects/C++/AviDB/cmake-build-debug/CMakeFiles/AviDB.dir/AviDB/IO.obj"
+  "C:/Programming/Projects/C++/AviDB/AviDB/Interpreter.cpp" "C:/Programming/Projects/C++/AviDB/cmake-build-debug/CMakeFiles/AviDB.dir/AviDB/Interpreter.obj"
   "C:/Programming/Projects/C++/AviDB/AviDB/Item.cpp" "C:/Programming/Projects/C++/AviDB/cmake-build-debug/CMakeFiles/AviDB.dir/AviDB/Item.obj"
   "C:/Programming/Projects/C++/AviDB/AviDB/Parser.cpp" "C:/Programming/Projects/C++/AviDB/cmake-build-debug/CMakeFiles/AviDB.dir/AviDB/Parser.obj"
   "C:/Programming/Projects/C++/AviDB/AviDB/Text.cpp" "C:/Programming/Projects/C++/AviDB/cmake-build-debug/CMakeFiles/AviDB.dir/AviDB/Text.obj"

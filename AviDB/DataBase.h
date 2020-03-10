@@ -12,7 +12,7 @@ using namespace std;
 class DataBase
 {
 	public:
-		DataBase(string);
+		explicit DataBase(string);
 
 		Array* GetData();
 		void SetData(Array*);

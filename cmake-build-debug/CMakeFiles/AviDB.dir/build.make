@@ -248,6 +248,25 @@ CMakeFiles\AviDB.dir\AviDB\Text.s: cmake_force
  /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\AviDB.dir\AviDB\Text.s /c C:\Programming\Projects\C++\AviDB\AviDB\Text.cpp
 <<
 
+CMakeFiles\AviDB.dir\AviDB\Interpreter.obj: CMakeFiles\AviDB.dir\flags.make
+CMakeFiles\AviDB.dir\AviDB\Interpreter.obj: ..\AviDB\Interpreter.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Programming\Projects\C++\AviDB\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/AviDB.dir/AviDB/Interpreter.obj"
+	C:\PROGRA~2\MICROS~1\2019\COMMUN~1\VC\Tools\MSVC\1424~1.283\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\AviDB.dir\AviDB\Interpreter.obj /FdCMakeFiles\AviDB.dir\ /FS -c C:\Programming\Projects\C++\AviDB\AviDB\Interpreter.cpp
+<<
+
+CMakeFiles\AviDB.dir\AviDB\Interpreter.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/AviDB.dir/AviDB/Interpreter.i"
+	C:\PROGRA~2\MICROS~1\2019\COMMUN~1\VC\Tools\MSVC\1424~1.283\bin\Hostx86\x86\cl.exe > CMakeFiles\AviDB.dir\AviDB\Interpreter.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Programming\Projects\C++\AviDB\AviDB\Interpreter.cpp
+<<
+
+CMakeFiles\AviDB.dir\AviDB\Interpreter.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/AviDB.dir/AviDB/Interpreter.s"
+	C:\PROGRA~2\MICROS~1\2019\COMMUN~1\VC\Tools\MSVC\1424~1.283\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\AviDB.dir\AviDB\Interpreter.s /c C:\Programming\Projects\C++\AviDB\AviDB\Interpreter.cpp
+<<
+
 # Object files for target AviDB
 AviDB_OBJECTS = \
 "CMakeFiles\AviDB.dir\AviDB\Array.obj" \
@@ -259,7 +278,8 @@ AviDB_OBJECTS = \
 "CMakeFiles\AviDB.dir\AviDB\Item.obj" \
 "CMakeFiles\AviDB.dir\main.obj" \
 "CMakeFiles\AviDB.dir\AviDB\Parser.obj" \
-"CMakeFiles\AviDB.dir\AviDB\Text.obj"
+"CMakeFiles\AviDB.dir\AviDB\Text.obj" \
+"CMakeFiles\AviDB.dir\AviDB\Interpreter.obj"
 
 # External object files for target AviDB
 AviDB_EXTERNAL_OBJECTS =
@@ -274,9 +294,10 @@ AviDB.exe: CMakeFiles\AviDB.dir\AviDB\Item.obj
 AviDB.exe: CMakeFiles\AviDB.dir\main.obj
 AviDB.exe: CMakeFiles\AviDB.dir\AviDB\Parser.obj
 AviDB.exe: CMakeFiles\AviDB.dir\AviDB\Text.obj
+AviDB.exe: CMakeFiles\AviDB.dir\AviDB\Interpreter.obj
 AviDB.exe: CMakeFiles\AviDB.dir\build.make
 AviDB.exe: CMakeFiles\AviDB.dir\objects1.rsp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Programming\Projects\C++\AviDB\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable AviDB.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Programming\Projects\C++\AviDB\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable AviDB.exe"
 	C:\Users\aviad\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\193.6494.38\bin\cmake\win\bin\cmake.exe -E vs_link_exe --intdir=CMakeFiles\AviDB.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x86\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x86\mt.exe --manifests  -- C:\PROGRA~2\MICROS~1\2019\COMMUN~1\VC\Tools\MSVC\1424~1.283\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\AviDB.dir\objects1.rsp @<<
  /out:AviDB.exe /implib:AviDB.lib /pdb:C:\Programming\Projects\C++\AviDB\cmake-build-debug\AviDB.pdb /version:0.0  /machine:X86 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
 <<

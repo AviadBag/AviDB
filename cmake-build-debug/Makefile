@@ -215,6 +215,21 @@ AviDB\IO.s:
 .PHONY : AviDB\IO.s
 
 # target to build an object file
+AviDB\Interpreter.obj:
+	$(MAKE) -f CMakeFiles\AviDB.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\AviDB.dir\AviDB\Interpreter.obj
+.PHONY : AviDB\Interpreter.obj
+
+# target to preprocess a source file
+AviDB\Interpreter.i:
+	$(MAKE) -f CMakeFiles\AviDB.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\AviDB.dir\AviDB\Interpreter.i
+.PHONY : AviDB\Interpreter.i
+
+# target to generate assembly for a file
+AviDB\Interpreter.s:
+	$(MAKE) -f CMakeFiles\AviDB.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\AviDB.dir\AviDB\Interpreter.s
+.PHONY : AviDB\Interpreter.s
+
+# target to build an object file
 AviDB\Item.obj:
 	$(MAKE) -f CMakeFiles\AviDB.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\AviDB.dir\AviDB\Item.obj
 .PHONY : AviDB\Item.obj
@@ -301,6 +316,9 @@ help:
 	@echo ... AviDB/IO.obj
 	@echo ... AviDB/IO.i
 	@echo ... AviDB/IO.s
+	@echo ... AviDB/Interpreter.obj
+	@echo ... AviDB/Interpreter.i
+	@echo ... AviDB/Interpreter.s
 	@echo ... AviDB/Item.obj
 	@echo ... AviDB/Item.i
 	@echo ... AviDB/Item.s

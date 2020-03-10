@@ -125,6 +125,12 @@
 		<Unit filename="C:/Programming/Projects/C++/AviDB/AviDB/IO.h">
 			<Option target="AviDB"/>
 		</Unit>
+		<Unit filename="C:/Programming/Projects/C++/AviDB/AviDB/Interpreter.cpp">
+			<Option target="AviDB"/>
+		</Unit>
+		<Unit filename="C:/Programming/Projects/C++/AviDB/AviDB/Interpreter.h">
+			<Option target="AviDB"/>
+		</Unit>
 		<Unit filename="C:/Programming/Projects/C++/AviDB/AviDB/Item.cpp">
 			<Option target="AviDB"/>
 		</Unit>
