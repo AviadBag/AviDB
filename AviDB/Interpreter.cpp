@@ -32,15 +32,15 @@ vector<string> Interpreter::Split(const string &text, char splitBy)
     string current;
     for (int i = 0; i < text.length(); i++)
     {
-        if (vct[i] == string(1, splitBy))
+        if (text[i] == splitBy)
         {
-            vct.push_back(current);
+            if (!current.empty()) vct.push_back(current);
             current = "";
         }
         else current += text[i];
     }
 
-    vct.push_back(current);
+    if (current != string(1, splitBy) && !current.empty()) vct.push_back(current);
 
     return vct;
 }

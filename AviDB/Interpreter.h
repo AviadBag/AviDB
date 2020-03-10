@@ -19,7 +19,6 @@ class Interpreter
         explicit Interpreter(const string& dataPath);
 
         bool EnterLine(const string& line);
-    static vector<string> Split(const string& text, char splitBy);
 
     private:
         DataBase db;
@@ -27,4 +26,5 @@ class Interpreter
 
         static void LogError(const string& error);
 
+        static vector<string> Split(const string& text, char splitBy);
 };
