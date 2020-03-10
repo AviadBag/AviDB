@@ -1,3 +1,0 @@
-C:/Programming/Projects/C++/AviDB/cmake-build-debug/CMakeFiles/AviDB.dir
-C:/Programming/Projects/C++/AviDB/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Programming/Projects/C++/AviDB/cmake-build-debug/CMakeFiles/rebuild_cache.dir
